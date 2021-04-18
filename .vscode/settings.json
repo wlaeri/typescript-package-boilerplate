@@ -1,22 +1,13 @@
 {
-  "[editor]": {
-    "defaultFormatter": "esbenp.prettier-vscode",
-    "formatOnSave": true,
-    "codeActionsOnSave": {
-      "source.fixAll": true
-    }
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
   },
-  "[eslint]": {
-    "options": {
-      "configFile": "./config/.eslintrc.json"
-    },
-    "enable": true
+  "prettier.configPath": "./config/.prettierrc.json",
+  "jest.pathToConfig": "./config/jest.base.json",
+  "eslint.options": {
+    "configFile": "./config/.eslintrc.json"
   },
-  "[jest]": {
-    "jestCommandLine": "npm run dev:test",
-    "autoRun": { "watch": true, "onStartup": ["all-tests"] }
-  },
-  "[prettier]": {
-    "configFile": "./config/.prettierrc.json"
-  }
+  "eslint.enable": false
 }

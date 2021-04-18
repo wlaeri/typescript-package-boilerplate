@@ -5,10 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "npx eslint --config ./config/.eslintrc.json",
-    "lint:fix": "run run lint --fix",
+    "lint:fix": "npx eslint --config ./config/.eslintrc.json --fix",
     "test:unit": "npx jest --config ./config/jest.unit.js",
     "test:integration": "npx jest --config ./config/jest.integration.js",
-    "dev:test": "npx jest --config ./config/jest.base.js",
     "test": "npm-run-all lint test:*",
     "prepack": "npm run build",
     "package": "ts-node scripts/package.ts",

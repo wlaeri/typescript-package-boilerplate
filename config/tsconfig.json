@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "module": "ESNext",
     "lib": ["es6"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
