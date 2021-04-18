@@ -1,0 +1,22 @@
+{
+  "[editor]": {
+    "defaultFormatter": "esbenp.prettier-vscode",
+    "formatOnSave": true,
+    "codeActionsOnSave": {
+      "source.fixAll": true
+    }
+  },
+  "[eslint]": {
+    "options": {
+      "configFile": "./config/.eslintrc.json"
+    },
+    "enable": true
+  },
+  "[jest]": {
+    "jestCommandLine": "npm run dev:test",
+    "autoRun": { "watch": true, "onStartup": ["all-tests"] }
+  },
+  "[prettier]": {
+    "configFile": "./config/.prettierrc.json"
+  }
+}
